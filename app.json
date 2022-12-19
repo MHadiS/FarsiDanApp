@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "FarsiDanApp",
-    "slug": "FarsiDanApp",
+    "name": "farsiDanApp",
+    "slug": "farsiDanApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/icon-ios.png",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#092844"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,8 +22,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/icon-android.png",
+        "backgroundColor": "#092844"
       }
     },
     "web": {
