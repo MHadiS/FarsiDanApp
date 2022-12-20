@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon-android.png",
         "backgroundColor": "#092844"
-      }
+      },
+      "package": "com.hadi98.farsiDanApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2660b6be-0ea5-4a4f-a9a3-a14b69b46f14"
+      }
     }
   }
 }
