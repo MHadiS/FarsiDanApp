@@ -65,7 +65,7 @@ export const styles = StyleSheet.create({
     },
     questionTitleText: {
         color: '#D3E4F3',
-        fontSize: 30,
+        fontSize: 20,
         textAlign: "center"
         
     },
