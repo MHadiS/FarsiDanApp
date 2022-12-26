@@ -20,7 +20,7 @@ export function updateQuestionsList(filters={}) {
     let difficulty = filters['difficulty']
     question_type === undefined || question_type === 'all' ? delete filters['question_type']: question_type
     difficulty === undefined || difficulty === 'all' ? delete filters['difficulty']: difficulty
-    const URL = make_url('http://193.141.64.229:8000/q/get_q?format=json&accepted=True', filters)
+    const URL = make_url('http://193.141.64.229/q/get_q?format=json&accepted=True', filters)
     // console.log(URL);
 
     fetch(URL, {method: 'GET',})
