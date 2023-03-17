@@ -48,25 +48,25 @@ export const styles = StyleSheet.create({
     },
     questionContainer: {
         width: '90%',
-        height: 130,
+        height: 168,
         marginTop: 35,
         backgroundColor: '#12548E', // '#104575',
-        borderRadius: '5%',
+        borderRadius: 5,
         flexDirection: 'column',
     },
 
     questionTitle: {
         color: '#FFC93F',
-        fontSize: 25,
+        fontSize: 32,
         marginRight: 10,
         marginTop: 10,
-        marginBottom: 20,
+        marginBottom: 15,
         textAlign: 'center'
     },
 
     questionText: {
         color: "#808080",
-        fontSize: 15,
+        fontSize: 18,
         marginRight: 20,
         marginBottom: 20,
         textAlign: 'right',
@@ -78,16 +78,16 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-around', 
         width:'100%', 
         backgroundColor: '#1D81D9',
-        borderColor: '#1769b3',
-        height: '38%',
-        borderBottomEndRadius: '5%',
-        borderBottomStartRadius: '5%',
+        borderTopWidth: 3,
+        borderColor: '#1D81D9',
+        height: '33%',
         alignItems: 'center',
+        borderRadius: 5
     },
 
     questionInfoText: {
         color: '#fff',
-        fontSize: 18
+        fontSize: 20
     },
 
     questionTitleContainer: {

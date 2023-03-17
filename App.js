@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { useFonts } from "expo-font";
 import { TouchableOpacity, Alert} from "react-native";
 import Icon from 'react-native-vector-icons/AntDesign';
 import FiltersScreen from "./screens/FiltersScreen";
@@ -11,7 +12,6 @@ const Stack = createNativeStackNavigator()
 
 
 export default function App() {
-
     return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{
@@ -21,7 +21,8 @@ export default function App() {
             headerTintColor: '#fff',
             headerTitleStyle: {
               fontSize: 20,
-            }
+            },
+            headerTitleAlign: 'center'
             }}>
 
       <Stack.Screen 
