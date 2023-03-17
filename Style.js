@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     questionsScreenContainer: {
         flex: 1,
         backgroundColor: '#092844',
-        alignItems: 'center',
+        // alignItems: 'center',
         flexDirection: 'column',
     },
 
@@ -47,13 +47,49 @@ export const styles = StyleSheet.create({
 
     },
     questionContainer: {
-        marginTop: 20
+        width: '90%',
+        height: 130,
+        marginTop: 35,
+        backgroundColor: '#12548E', // '#104575',
+        borderRadius: '5%',
+        flexDirection: 'column',
+    },
+
+    questionTitle: {
+        color: '#FFC93F',
+        fontSize: 25,
+        marginRight: 10,
+        marginTop: 10,
+        marginBottom: 20,
+        textAlign: 'center'
     },
 
     questionText: {
-        color: '#FFC93F',
-        fontSize: 20,
+        color: "#808080",
+        fontSize: 15,
+        marginRight: 20,
+        marginBottom: 20,
+        textAlign: 'right',
+        opacity: 0.6
     },
+
+    questionInfoContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-around', 
+        width:'100%', 
+        backgroundColor: '#1D81D9',
+        borderColor: '#1769b3',
+        height: '38%',
+        borderBottomEndRadius: '5%',
+        borderBottomStartRadius: '5%',
+        alignItems: 'center',
+    },
+
+    questionInfoText: {
+        color: '#fff',
+        fontSize: 18
+    },
+
     questionTitleContainer: {
         flex: 1,
         backgroundColor: '#12548E',
@@ -61,13 +97,13 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         marginVertical: 20,
         width: '88%',
+        marginLeft: '6%',
         borderRadius: 15
     },
     questionTitleText: {
         color: '#D3E4F3',
         fontSize: 20,
         textAlign: "center"
-        
     },
     optionsContainer: {
         flex: 1.5, 
@@ -92,5 +128,25 @@ export const styles = StyleSheet.create({
     optionText: {
         fontSize: 20,
         color: '#092844'
+    },
+
+    controllerContainer: {
+        flexDirection: "row-reverse",
+        justifyContent: "space-evenly"
+    },
+
+    controller: {
+        flex: 1,
+        backgroundColor: '#1D81D9',
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 7,
+        borderWidth: 1,
+        borderColor: '#092844'
+    },
+
+    controllerText: {
+        color: "#D3E4F3",
+        fontSize: 12
     }
 })
