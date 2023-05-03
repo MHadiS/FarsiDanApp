@@ -7,7 +7,7 @@ import { updateQuestionsList } from './QuestionsListScreen';
 import { useNavigation } from '@react-navigation/native';
 
 export default function FiltersScreen({ route }) {
-    console.log(route);
+    // console.log(route);
     const navigation = useNavigation()
     const [fromTizhooshanExam, setFromTizhooshanExam] = useState(false);
     const [subjectNO, setSubjectNO] = useState('all');
@@ -93,7 +93,6 @@ export default function FiltersScreen({ route }) {
                   onSelectItem={setQuestionsType}
                 />
             </View>
-            <TouchableOpacity onPress={() => navigation.navigate('questions')}><Text>navigate</Text></TouchableOpacity>
         </View>
     );
 }

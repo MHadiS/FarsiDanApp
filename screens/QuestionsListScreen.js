@@ -21,7 +21,8 @@ export function updateQuestionsList(filters={}) {
     let subjectNO = filters['subjectNO']
     question_type === undefined || question_type === 'all' ? delete filters['question_type']: question_type
     difficulty === undefined || difficulty === 'all' ? delete filters['difficulty']: difficulty
-    subjectNO === undefined || subjectNO === 'all' ? delete filters['chapter_no']: difficulty
+    subjectNO === undefined || subjectNO === 'all' ? delete filters['chapter_no']: subjectNO
+    console.log("subjectNO", subjectNO);
     const URL = make_url('http://5.182.44.132:80/q/get_q?format=json&accepted=True', filters)
     console.log(URL);
 
@@ -74,12 +75,11 @@ function Question(props) {
     let question = props.data[props.question_index];
     return (
         <TouchableOpacity style={styles.questionContainer} onPress={() => navigationCopy.navigate('questionSolving', {questions: props.data, question_index: props.question_index})}>
-            <Text style={styles.questionTitle}>{question.title}</Text>
-            <Text style={styles.questionText}>{summarize(question.text, 35)}</Text>
+            <Text style={styles.questionTitle}>{summarize(question.text, 35)}</Text>
             <View style={styles.questionInfoContainer}>
-                <Text style={styles.questionInfoText}>{difficulty_decoder(question.difficulty, question.from_tizhooshan_exam)}</Text>
-                <Text style={styles.questionInfoText}>{question_type_decoder(question.question_type)}</Text>
-                <Text style={styles.questionInfoText}>{"درس " + String(question.chapter_no)}</Text>
+                <Text style={styles.questionInfoText}>{"سختی : " + difficulty_decoder(question.difficulty, question.from_tizhooshan_exam)}</Text>
+                <Text style={styles.questionInfoText}>{"نوع : " + question_type_decoder(question.question_type)}</Text>
+                <Text style={styles.questionInfoText}>{"درس : " + String(question.chapter_no)}</Text>
             </View>
         </TouchableOpacity>
     );

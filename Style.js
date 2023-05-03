@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
     },
     questionContainer: {
         width: '90%',
-        height: 168,
+        height: 138,
         marginTop: 35,
         backgroundColor: '#12548E', // '#104575',
         borderRadius: 5,
@@ -57,11 +57,12 @@ export const styles = StyleSheet.create({
 
     questionTitle: {
         color: '#FFC93F',
-        fontSize: 32,
+        fontSize: 20,
         marginRight: 10,
-        marginTop: 10,
-        marginBottom: 15,
-        textAlign: 'center'
+        marginTop: 35,
+        marginBottom: 35,
+        textAlign: 'center',
+        marginVertical: 10
     },
 
     questionText: {
@@ -87,7 +88,7 @@ export const styles = StyleSheet.create({
 
     questionInfoText: {
         color: '#fff',
-        fontSize: 20
+        fontSize: 16
     },
 
     questionTitleContainer: {
@@ -148,5 +149,33 @@ export const styles = StyleSheet.create({
     controllerText: {
         color: "#D3E4F3",
         fontSize: 12
+    },
+
+    alert: {
+        color: 'red',
+        textAlign: 'center', 
+        fontSize: 20, 
+        marginTop: 20,
+        marginHorizontal: 10
+    },
+
+    text: {
+        color: '#D3E4F3',
+        textAlign: 'right',
+        marginHorizontal: 15,
+        fontSize: 18
+    },
+
+    title: {
+        marginVertical: 20,
+        fontSize: 30,
+    },
+
+    section: {
+        borderBottomWidth: 1,
+        borderTopWidth: 1,
+        borderColor: "#fff",
+        marginTop: 30,
+        paddingBottom: 20,
     }
 })

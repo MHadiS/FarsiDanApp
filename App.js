@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import FiltersScreen from "./screens/FiltersScreen";
 import QuestionsListScreen from "./screens/QuestionsListScreen";
 import QuestionSolvingScreen from "./screens/QuestionSolvingScreen";
+import InfoScreen from "./screens/Info";
 
 
 const Stack = createNativeStackNavigator()
@@ -31,7 +32,7 @@ export default function App() {
             options={ ({ navigation }) => ({
               title: 'فارسیدان', 
               headerRight: props => (
-                <TouchableOpacity onPress={() => Alert.alert('این برنامه توسط محمد هادی شکیب آزاد و احمد یوسفی ساخته شده است')}>
+                <TouchableOpacity onPress={() => navigation.navigate('info')}>
                   <Icon name="infocirlceo" color="#fff" size={23} />
                 </TouchableOpacity>),
               headerLeft: props => (
@@ -51,6 +52,14 @@ export default function App() {
             options={{
               title: 'حل سوال'
             }}/>
+          
+          <Stack.Screen
+            name="info"
+            component={InfoScreen}
+            options={{
+              title: 'توضیحات'
+            }}/>
+
           
 
 
